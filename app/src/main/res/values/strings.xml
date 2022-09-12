@@ -6,4 +6,17 @@
     <string name="hint_password">Введите пароль</string>
     <string name="button_create_order">Создать заказ</string>
     <string name="warning_fill_fields">Все поля должны быть заполнены</string>
+
+    <string-array name="options_of_coffee">
+        <item>Американо</item>
+        <item>Эксрессо</item>
+        <item>Латте</item>
+    </string-array>
+    <string-array name="options_of_tea">
+        <item>Черный</item>
+        <item>Зеленный</item>
+        <item>Красный</item>
+    </string-array>
+
+
 </resources>
