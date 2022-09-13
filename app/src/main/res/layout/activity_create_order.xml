@@ -14,7 +14,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="Привет, клиент, что будите заказывать?"
+        android:text="@string/hello_user"
         android:textColor="@color/darkBrown"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -34,18 +34,21 @@
 
         <RadioButton
             android:layout_width="wrap_content"
+            android:checked="true"
+            android:onClick="onClickChangeDrink"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:buttonTint="@color/darkBrown"
-            android:text="Чай"
+            android:text="@string/tea"
             android:textColor="@color/white" />
 
         <RadioButton
             android:layout_width="wrap_content"
+            android:onClick="onClickChangeDrink"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:buttonTint="@color/darkBrown"
-            android:text="Кофе"
+            android:text="@string/coffee"
             android:textColor="@color/white" />
     </RadioGroup>
 
@@ -55,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:gravity="center"
-        android:text="Что добавить в ваш чай?"
+        android:text="@string/addition"
         android:textColor="@color/darkBrown"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -70,7 +73,7 @@
         android:layout_margin="8dp"
         android:buttonTint="@color/darkBrown"
         android:checked="false"
-        android:text="Молоко"
+        android:text="@string/milk"
         android:textColor="@color/white"
         app:centerIfNoTextEnabled="false"
         app:layout_constraintEnd_toStartOf="@id/checkboxSugar"
@@ -83,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:buttonTint="@color/darkBrown"
-        android:text="Сахар"
+        android:text="@string/sugar"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@id/checkboxLemon"
         app:layout_constraintStart_toEndOf="@id/checkboxMilk"
@@ -95,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:buttonTint="@color/darkBrown"
-        android:text="Лемон"
+        android:text="@string/lemon"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/checkboxSugar"
@@ -107,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:gravity="center"
-        android:text="Выберите вид напитка"
+        android:text="@string/choose_drink"
         android:textColor="@color/darkBrown"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -116,6 +119,7 @@
         app:layout_constraintTop_toBottomOf="@id/checkboxSugar" />
 
     <Spinner
+
         android:id="@+id/spinnerTea"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -145,9 +149,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"
-        android:contentDescription="Кнопка отправки заказа"
+        android:contentDescription="@string/button_send_description"
         android:src="@drawable/button"
-        android:onClick="onClickCreateOrder"
+        android:onClick="onClickSendOrder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
